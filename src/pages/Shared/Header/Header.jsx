@@ -22,10 +22,14 @@ const Header = () => {
           <p className="text-info h4 text-decoration-underline">
             Breaking News
           </p>
-          &nbsp;: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Harum sapiente dolorem quos asperiores voluptate laudantium quaerat
-          eveniet incidunt natus eum.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp;
+          &nbsp;: Bangladesh Govt. ruling party Awami League secured their
+          consecutive fourth time by an unfair election today.&nbsp;
+          <p className="text-danger h4 text-decoration-underline">
+            Sports News
+          </p>
+          &nbsp;: Christiano Ronaldo and Messi are in the same match after a
+          long since in Saudi Arabia. Australia won the ODI World Cup title for
+          sixth time . &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         </Marquee>
       </div>
 

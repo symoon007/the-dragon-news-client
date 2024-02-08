@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import EditorInsightHome from "../../News/News/EditorInsightHome";
 
 const LeftSidebar = () => {
   const [categories, setCategories] = useState([]);
@@ -17,7 +18,7 @@ const LeftSidebar = () => {
         {categories.map((category) => (
           <p key={category.id} className="">
             <Link
-              to={`/all-category/${category.name}`}
+              to={`/categories/${category.id}`}
               className="text-dark-emphasis text-decoration-none "
             >
               {category.name}
@@ -25,6 +26,7 @@ const LeftSidebar = () => {
           </p>
         ))}
       </div>
+      <EditorInsightHome/>
     </div>
   );
 };
