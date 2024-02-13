@@ -5,9 +5,13 @@ import EditorInsightHome from "../../News/News/EditorInsightHome";
 const LeftSidebar = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://the-dragon-news-server-mu-ruddy.vercel.app/categories")
       .then((response) => response.json())
-      .then((data) => setCategories(data))
+      .then((data) => {
+        // console.log("fetch data ", data);
+
+        setCategories(data);
+      })
       .catch((err) => console.error(err));
   }, []);
 
@@ -26,7 +30,7 @@ const LeftSidebar = () => {
           </p>
         ))}
       </div>
-      <EditorInsightHome/>
+      <EditorInsightHome />
     </div>
   );
 };
